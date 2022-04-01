@@ -47,5 +47,14 @@ module.exports = function (environment) {
     // here you can enable a production-specific feature
   }
 
+  try {
+    var local = require('./local_environment');
+    Object.keys(local.config).forEach(function (key) {
+      ENV[key] = local.config[key];
+    });
+  } catch (err) {
+    console.log('config/local_environment.js not found');
+  }
+
   return ENV;
 };
