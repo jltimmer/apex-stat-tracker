@@ -1,8 +1,10 @@
+<LinkTo @route="index"><button type="button">Home</button></LinkTo><br><br>
+
 <Input
   id="username"
   @type="text"
   @value={{@username}}
 />
-<button type="button" {{on "click" this.search}}>Search</button>
 
-{{!-- <div></div> --}}
+
+<button type="button" {{on "click" this.search}}>Search</button>
