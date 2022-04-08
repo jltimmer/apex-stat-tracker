@@ -10,6 +10,6 @@ export default class StatsSearchComponent extends Component {
 
   @action
   search() {
-    this.router.transitionTo('player-stats', { username: username.value} );
+    this.router.transitionTo('player-stats', username.value);
   }
 }
