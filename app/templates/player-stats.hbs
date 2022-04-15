@@ -1,3 +1,13 @@
 {{page-title "PlayerStats"}}
 
-<div>{{@model.global.name}}</div>
+<div>
+  <h1>{{@model.global.name}}</h1>
+  <ul>
+    <li>Level: {{@model.global.level}}</li>
+    <li>Rank: {{@model.global.rank.rankName}} {{@model.global.rank.rankDiv}}</li>
+    <li>Selected Legend: {{@model.legends.selected.LegendName}}</li>
+  </ul>
+
+  <img src="{{@model.legends.selected.ImgAssets.icon}}">
+
+</div>
