@@ -1,7 +1,10 @@
-import Model, {attr} from '@ember-data/model';
+import Model, { attr } from '@ember-data/model';
 
 export default class PlayerModel extends Model {
   @attr('string') username;
-  @attr('number') level;
-  // @attr('string') 
+  @attr('string') level;
+  @attr('string') rank;
+  @attr('string') rankDiv;
+  @attr('string') selectedLegend;
+  @attr('string') selectedLegendImgLink;
 }
